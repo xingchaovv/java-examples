@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.regex.Pattern;
@@ -27,7 +29,7 @@ public class UpdateTagContent
         return fileName.substring(fileName.lastIndexOf('.') + 1).equals("md");
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         UpdateTagContent updateIns = new UpdateTagContent();
 
         File[] files = updateIns.listDocDirFiles();
@@ -45,13 +47,12 @@ public class UpdateTagContent
         }
     }
 
-    private void updateOneFile(File file) throws IOException {
+    private void updateOneFile(File file) throws IOException, InterruptedException {
         System.out.println(file.getAbsolutePath());
         String fileContent = Files.readString(Path.of(file.getCanonicalPath()));
         fileContent = parseTagFile(fileContent);
         fileContent = parseTagRun(fileContent);
-        System.out.println(fileContent);
-        // Files.writeString();
+        Files.writeString(Path.of(file.getCanonicalPath()), fileContent);
     }
 
     private String parseTagFile(String fileContent) throws IOException
@@ -71,7 +72,7 @@ public class UpdateTagContent
             String newTagContent = Files.readString(Path.of(file.getCanonicalPath()));
             newTagContent = String.format(
                 "\n"
-                + "源文件 [%s](%s)\n"
+                + "源文件 [../%s](../%s)\n\n"
                 + "```\n"
                 + "%s\n"
                 + "```\n",
@@ -85,7 +86,7 @@ public class UpdateTagContent
         return newContent.toString();
     }
     
-    private String parseTagRun(String fileContent) throws IOException
+    private String parseTagRun(String fileContent) throws IOException, InterruptedException
     {
         // <!-- run:main/primitive_type.java -->
         // <!-- endrun -->
@@ -98,12 +99,32 @@ public class UpdateTagContent
             String relaFilePath = matcher.group(1);
             String oldTagContent = matcher.group(2);
 
-            File file = (new File(rootDir.getCanonicalPath() + "/" + relaFilePath)).getCanonicalFile();
-            // @TODO
-            String newTagContent = "result_for_" + relaFilePath;
+            String newTagContent = "";
+            ProcessBuilder processBuilder = new ProcessBuilder();
+            processBuilder.redirectErrorStream(true);
+            Process process;
+            BufferedReader reader;
+            String line;
+
+            processBuilder.command("javac", relaFilePath + ".java");
+            process = processBuilder.start();
+            process.waitFor();
+            reader = new BufferedReader(new InputStreamReader(process.getInputStream()));            
+            while ((line = reader.readLine()) != null) {
+                newTagContent = newTagContent + line + "\n";
+            }
+
+            processBuilder.command("java", relaFilePath);            
+            process = processBuilder.start();
+            process.waitFor();
+            reader = new BufferedReader(new InputStreamReader(process.getInputStream()));            
+            while ((line = reader.readLine()) != null) {
+                newTagContent = newTagContent + line + "\n";
+            }
+
             newTagContent = String.format(
                 "\n"
-                + "```\n"
+                + "```\n\n"
                 + "\\$ javac %s.java && java %s\n"
                 + "%s\n"
                 + "```\n",
