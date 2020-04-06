@@ -1,4 +1,4 @@
-package main;
+package example.main;
 
 /**
  * 原始类型
