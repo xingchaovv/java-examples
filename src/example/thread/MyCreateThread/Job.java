@@ -1,4 +1,4 @@
-package example.thread.MyThread;
+package example.thread.MyCreateThread;
 
 public class Job implements Runnable {
 
