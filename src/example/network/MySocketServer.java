@@ -12,9 +12,9 @@ public class MySocketServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(8189); // 服务端，指定端口
-        Socket incoming = server.accept(); // 阻塞，等待连接
-        InputStream inStream = incoming.getInputStream();
-        OutputStream outStream = incoming.getOutputStream();
+        Socket socket = server.accept(); // 阻塞，等待连接
+        InputStream inStream = socket.getInputStream();
+        OutputStream outStream = socket.getOutputStream();
         Scanner scanner = new Scanner(inStream);
         PrintWriter printWriter = new PrintWriter(outStream, true);
 
@@ -24,7 +24,7 @@ public class MySocketServer {
         while (scanner.hasNextLine()) {
             String clientMsg = scanner.nextLine();
             if (clientMsg.equals("bye")) {
-                incoming.close();
+                socket.close();
                 break;
             }
             printWriter.println("Server: I received: " + clientMsg);
