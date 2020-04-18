@@ -11,6 +11,8 @@
 3. [InetAddress 类](src/example/network/InetAddressDemo.java)
 4. [Socket 多客户端支持](src/example/network/MultiClientSocket)
 5. [TCP 半关闭 Demo](src/example/network/HalfCloseDemo.java)
+6. [URL、URI 用法](src/example/network/UrlDemo.java)
+7. [URLConnection 类 Demo](src/example/network/UrlConnectionDemo.java)
 
 - 线程
 
