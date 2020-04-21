@@ -3,7 +3,7 @@
 ## 示例文件
 
 <!-- file:main/primitive_type.java -->
-源文件 [../main/primitive_type.java](../src/example/main/primitive_type.java)
+源文件 [../main/primitive_type.java](../src/main/java/example/main/primitive_type.java)
 
 ```
 package main;
