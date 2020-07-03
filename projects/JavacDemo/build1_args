@@ -1,0 +1,6 @@
+-classpath libraries/json-20200518.jar
+-d target/classes
+src/main/java/JavacDemoB/tool/ToolA.java
+src/main/java/JavacDemoB/tool/ToolB.java
+src/main/java/JavacDemoB/JavacDemoB1.java
+src/main/java/JavacDemoB/JavacDemoB2.java
