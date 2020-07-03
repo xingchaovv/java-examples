@@ -1,5 +1,9 @@
 # Javac 命令用法 Demo
 
+JavacDemo 为一个独立的 Java 项目，用于演示 javac 用法。源码目录为 [/projects/JavacDemo](/projects/JavacDemo) 。
+
+---
+
 编译指定 Java 源文件，生成到指定目录，按照包结构
 
 ```
