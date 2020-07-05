@@ -1,6 +1,6 @@
-# Javac 命令用法 Demo
+# javac 命令用法 Demo
 
-JavacDemo 为一个独立的 Java 项目，用于演示 javac 用法。源码目录为 [/projects/JavacDemo](/projects/JavacDemo) 。
+JavacDemo 为一个独立的 Java 项目，用于演示 java、javac 等命令用法。源码目录为 [/projects/JavacDemo](/projects/JavacDemo) 。
 
 ---
 
@@ -42,4 +42,11 @@ javac \
 -classpath target/classes:libraries/json-20200518.jar \
 -d target/classes \
 src/main/java/*/*.java
+```
+
+使用环境变量 JDK_JAVAC_OPTIONS 指定选项
+
+```
+% JDK_JAVAC_OPTIONS="-classpath libraries/json-20200518.jar" \
+javac -d target/classes src/main/java/*/*.java src/main/java/*/*/*.java
 ```

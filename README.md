@@ -6,7 +6,8 @@
 
 - Java 命令和工具
 
-1. [javac 用法](projects/JavacDemo/USAGE.md)
+1. [javac 用法](projects/JavacDemo/javac.md)
+2. [java 用法](projects/JavacDemo/java.md)
 
 - 网络
 

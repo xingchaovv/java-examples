@@ -1,9 +1,6 @@
-package JavacDemoB;
-
-import JavacDemoB.tool.ToolA;
 import org.json.JSONObject;
 
-public class JavacDemoB1 {
+public class ParseJson {
 
     public static void main(String[] args) {
         String msgStr = "{\"code\":0,\"msg\":\"success\"}";
@@ -11,11 +8,7 @@ public class JavacDemoB1 {
         if (!msg.has("code")) {
             System.out.println("The msg has none code");
         }
-        System.out.printf("The code is: %d", msg.getInt("code"));
-    }
-
-    private void callToolA1()
-    {
-        ToolA.ToolA1();
+        System.out.printf("The code is: %d\n", msg.getInt("code"));
+        System.out.printf("The msg is: %s\n", msg.getString("msg"));
     }
 }
