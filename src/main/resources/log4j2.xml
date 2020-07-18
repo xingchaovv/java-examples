@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console 追加器 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <Console name="ConsoleErr" target="SYSTEM_ERR">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <File name="File" fileName="logs/countSheep/countSheep-File.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <RandomAccessFile name="RandomAccessFile" fileName="logs/countSheep/countSheep-RandomAccessFile.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </RandomAccessFile>
+        <!-- 滚动记录 -->
+        <RollingRandomAccessFile name="RollingFile" fileName="logs/countSheep/countSheep.log" filePattern="logs/countSheep/countSheep-%d{yyyyMMdd}-%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="2 MB"/>
+            </Policies>
+            <!-- 最多保留文件数 -->
+            <DefaultRolloverStrategy max="5"/>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <!-- warn 级别日志，包含了：warn、error -->
+        <Root level="warn">
+            <AppenderRef ref="ConsoleErr"/>
+        </Root>
+        <Logger name="com.xingchaovv.java.example.logging.count" level="warn" additivity="false">
+            <AppenderRef ref="ConsoleErr"/>
+        </Logger>
+        <Logger name="com.xingchaovv.java.example.logging.count" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>

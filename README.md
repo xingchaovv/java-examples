@@ -9,6 +9,9 @@
 1. [javac 用法](projects/JavacDemo/javac.md)
 2. [java 用法](projects/JavacDemo/java.md)
 
+- Maven 项目构建
+1. [项目 POM 配置文件](pom.xml)
+
 - 网络
 
 1. [Socket 客户端例子](src/main/java/com/xingchaovv/java/example/network/MySocketClient.java)
@@ -33,13 +36,11 @@
 5. [使用 Condition 条件](src/main/java/com/xingchaovv/java/example/thread/MyConditionThread)
 6. [使用 synchronized 同步方法](src/main/java/com/xingchaovv/java/example/thread/MySyncThread)
 
+- 日志
+
+1. [Log4j 2](src/main/java/com/xingchaovv/java/example/logging)
+
 - 单元测试
 
 1. [单元测试示例](src/test/java/com/xingchaovv/java/example/test/TestDemo1.java)
 2. [执行过程演示](src/test/java/com/xingchaovv/java/example/test/TestExecutionProcedure.java)
-
-- Maven 项目构建
-
-1. [项目 POM 配置文件](pom.xml)
-
-
