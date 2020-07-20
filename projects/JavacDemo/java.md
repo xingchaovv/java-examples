@@ -23,3 +23,9 @@ JavacDemo 为一个独立的 Java 项目，用于演示 java、javac 等命令�
 ```
 % java src/main/java/JavacDemo/SayHello.java
 ```
+
+执行指定 jar 包
+
+```
+% java -jar target/JavacDemo.jar 
+```

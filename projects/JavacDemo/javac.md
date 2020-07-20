@@ -16,7 +16,7 @@ JavacDemo 为一个独立的 Java 项目，用于演示 java、javac 等命令�
 % javac \
 -classpath libraries/json-20200518.jar \
 -d target/classes \
-src/main/java/*/*.java src/main/java/*/*/*.java
+src/main/java/*.java src/main/java/*/*.java src/main/java/*/*/*.java
 ```
 
 显示编译详情

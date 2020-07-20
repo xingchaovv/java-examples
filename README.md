@@ -8,6 +8,7 @@
 
 1. [javac 用法](projects/JavacDemo/javac.md)
 2. [java 用法](projects/JavacDemo/java.md)
+3. [jar 用法](projects/JavacDemo/jar.md)
 
 - Maven 项目构建
 1. [项目 POM 配置文件](pom.xml)
