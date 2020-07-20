@@ -31,5 +31,12 @@ cd -
 
 ```
 % jar --create --file target/JavacDemo.jar --manifest src/manifest -C target/classes AppEntry.class
-% jar -tf target/JavacDemo.jar
+% jar tf target/JavacDemo.jar
+```
+
+解压 Jar 包
+
+```
+% jar --extract --file target/JavacDemo.jar
+% jar xf target/JavacDemo.jar
 ```
