@@ -13,6 +13,9 @@
 - Maven 项目构建
 1. [项目 POM 配置文件](pom.xml)
 
+- Web 项目
+1. [Web Application 演示 webapp-demo](projects/webapp-demo)
+
 - 网络
 
 1. [Socket 客户端例子](src/main/java/com/xingchaovv/java/example/network/MySocketClient.java)
