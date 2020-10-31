@@ -48,3 +48,9 @@
 
 1. [单元测试示例](src/test/java/com/xingchaovv/java/example/test/TestDemo1.java)
 2. [执行过程演示](src/test/java/com/xingchaovv/java/example/test/TestExecutionProcedure.java)
+
+- Java 学习项目 lets-java
+
+代码位置：projects/lets-java
+
+来自：https://github.com/geektime-geekbang/LetsJava
