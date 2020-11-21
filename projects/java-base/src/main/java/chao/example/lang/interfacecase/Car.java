@@ -1,14 +1,10 @@
-package chao.example.lang.abstractclass;
+package chao.example.lang.interfacecase;
 
 public abstract class Car {
     private String name;
 
     public String getName() {
         return name;
-    }
-
-    public Car() {
-        System.out.println("Car Construct.");
     }
 
     abstract void run();
