@@ -1,4 +1,4 @@
-package basic.usage;
+package junit.usage;
 
 /*
  * This class prints the given message on console.

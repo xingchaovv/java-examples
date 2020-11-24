@@ -1,4 +1,4 @@
-package exceptions.test;
+package junit.exceptions.test;
 
 public class MessageUtil {
 

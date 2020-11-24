@@ -1,4 +1,4 @@
-package using.assertion;
+package junit.assertion;
 
 import org.junit.After;
 import org.junit.AfterClass;
