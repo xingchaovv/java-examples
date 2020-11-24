@@ -1,11 +1,10 @@
 package lang.doimport.dostatic;
 
-import example.lang.doimport.dostatic.tool.MyTool;
+import lang.doimport.dostatic.tool.MyTool;
 
 import static java.lang.System.out;
 import static java.lang.Integer.*;
 // import static chao.example.lang.doimport.dostatic.tool.MyTool.VER;
-
 
 class Use
 {

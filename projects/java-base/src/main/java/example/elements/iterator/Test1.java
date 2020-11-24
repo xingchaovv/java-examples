@@ -26,6 +26,7 @@ public class Test1 {
                 System.out.println(s);
             }
         });
+        names.forEach(s -> System.out.println(s));
         names.forEach(System.out::println);
     }
 }

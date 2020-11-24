@@ -1,5 +1,6 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
 import static org.powermock.api.mockito.PowerMockito.*;
@@ -13,7 +14,7 @@ public class CollaboratorWithFinalMethodsTest {
 
     @Test
     public void helloMethodTest() throws Exception {
-        CollaboratorWithFinalMethods mock = PowerMockito.mock(CollaboratorWithFinalMethods.class);
+        CollaboratorWithFinalMethods mock = mock(CollaboratorWithFinalMethods.class);
         whenNew(CollaboratorWithFinalMethods.class).withNoArguments().thenReturn(mock);
 
         CollaboratorWithFinalMethods collaborator = new CollaboratorWithFinalMethods();
