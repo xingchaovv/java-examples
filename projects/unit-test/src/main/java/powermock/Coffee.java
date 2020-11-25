@@ -2,7 +2,7 @@ package powermock;
 
 import java.util.Date;
 
-public class CollaboratorWithFinalMethods {
+public class Coffee {
     public final String helloMethod() {
         return "Hello World!";
     }

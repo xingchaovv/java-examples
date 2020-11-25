@@ -14,4 +14,16 @@ public class Dog {
     public static String getHello() {
         return "Hello";
     }
+
+    public String getAddress() {
+        return getAddressByPrivate();
+    }
+
+    private String getAddressByPrivate() {
+        return "Beijing";
+    }
+
+    public final int getAge() {
+        return 20;
+    }
 }

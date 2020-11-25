@@ -13,6 +13,7 @@ import static org.powermock.api.mockito.PowerMockito.*;
  * 静态 Mock
  */
 @RunWith(PowerMockRunner.class)
+// 静态方法，必须提前 Prepare
 @PrepareForTest(Dog.class)
 public class StaticMockTest {
 
