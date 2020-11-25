@@ -1,8 +1,17 @@
 package powermock;
 
+import lombok.Data;
+
+@Data
 public class Dog {
 
-    public static long varietyCount() {
-        return 10L;
+    private String name;
+
+    public static int getIntTen() {
+        return 10;
+    }
+
+    public static String getHello() {
+        return "Hello";
     }
 }
