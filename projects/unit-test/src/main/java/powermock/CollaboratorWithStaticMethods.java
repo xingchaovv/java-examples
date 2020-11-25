@@ -1,3 +1,5 @@
+package powermock;
+
 public class CollaboratorWithStaticMethods {
     public static String firstMethod(String name) {
         return "Hello " + name + " !";

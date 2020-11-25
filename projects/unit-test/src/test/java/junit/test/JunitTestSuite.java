@@ -1,12 +1,12 @@
-package suite.test;
+package junit.test;
 
+import junit.test.TestJunit;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        TestJunit2.class,
-        TestJunit1.class,
+        TestJunit.class,
 })
 public class JunitTestSuite {
 }

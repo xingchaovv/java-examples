@@ -1,3 +1,5 @@
+package powermock;
+
 import java.util.Date;
 
 public class CollaboratorWithFinalMethods {

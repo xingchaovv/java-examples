@@ -1,4 +1,4 @@
-package basic.usage;
+package junit.usage;
 
 import org.junit.Ignore;
 import org.junit.Test;
