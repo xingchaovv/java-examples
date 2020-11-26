@@ -3,6 +3,9 @@ package lang.lambda;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Consumer 接口 Lambda 应用
+ */
 public class ConsumerUsage {
 
     public static void main(String[] args) {

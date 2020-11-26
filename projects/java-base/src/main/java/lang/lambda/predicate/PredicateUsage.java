@@ -1,7 +1,10 @@
-package lang.lambda;
+package lang.lambda.predicate;
 
 import java.util.function.Predicate;
 
+/**
+ * Predicate 接口 Lambda 应用
+ */
 public class PredicateUsage {
 
     public static void main(String[] args) {
