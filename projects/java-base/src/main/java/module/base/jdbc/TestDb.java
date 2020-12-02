@@ -1,4 +1,4 @@
-package example.jdbc;
+package module.base.jdbc;
 
 import java.io.IOException;
 import java.io.InputStream;

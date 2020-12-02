@@ -1,4 +1,4 @@
-package example.base;
+package module.base.util;
 
 import java.util.Scanner;
 

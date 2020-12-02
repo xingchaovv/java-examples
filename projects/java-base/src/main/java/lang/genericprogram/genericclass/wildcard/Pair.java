@@ -1,4 +1,4 @@
-package lang.genericclass;
+package lang.genericprogram.genericclass.wildcard;
 
 public class Pair<T> {
 
@@ -29,11 +29,5 @@ public class Pair<T> {
 
     public void setSecond(T second) {
         this.second = second;
-    }
-
-    public static void main(String[] args) {
-        Pair<Integer> pairNums = new Pair<>();
-        Pair<Integer> pairNums2 = new Pair<>(101, 202);
-        System.out.println(pairNums2.getFirst());
     }
 }

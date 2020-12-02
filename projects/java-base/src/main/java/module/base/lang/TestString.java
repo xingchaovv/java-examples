@@ -1,4 +1,4 @@
-package example.base;
+package module.base.lang;
 
 public class TestString {
     public static void main(String[] args) {
