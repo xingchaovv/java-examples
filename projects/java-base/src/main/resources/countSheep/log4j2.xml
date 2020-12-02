@@ -29,10 +29,10 @@
         <Root level="warn">
             <AppenderRef ref="ConsoleErr"/>
         </Root>
-        <Logger name="com.xingchaovv.java.example.logging.count" level="warn" additivity="false">
+        <Logger name="com.xingchaovv.java.logging.log4j.count" level="warn" additivity="false">
             <AppenderRef ref="ConsoleErr"/>
         </Logger>
-        <Logger name="com.xingchaovv.java.example.logging.count" level="info" additivity="false">
+        <Logger name="com.xingchaovv.java.logging.log4j.count" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Logger>
