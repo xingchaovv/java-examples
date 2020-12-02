@@ -1,4 +1,4 @@
-package java_base_lang.thread2.MyInterruptThread;
+package java_base_lang.thread.MyInterruptThread;
 
 public class NormalJob implements Runnable {
 

@@ -1,4 +1,4 @@
-package java_base_lang.thread2.MyConditionThread;
+package java_base_lang.thread.MySyncThread;
 
 /**
  * 竞争条件例子，银行账户账户转移

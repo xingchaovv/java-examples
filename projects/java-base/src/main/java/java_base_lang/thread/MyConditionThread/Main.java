@@ -1,13 +1,13 @@
-package java_base_lang.thread2.MyUnsyncThread;
+package java_base_lang.thread.MyConditionThread;
 
 /**
  * 竞争条件例子，银行账户账户转移
  */
 public class Main
 {
-   public static final int NACCOUNTS = 100;
-   public static final double INITIAL_BALANCE = 1000;
-   public static final double MAX_AMOUNT = 1000;
+   public static final int NACCOUNTS = 100; // 账户数量
+   public static final int INITIAL_BALANCE = 1000; // 初始金额
+   public static final int MAX_AMOUNT = 1000; // 最大转账金额
    public static final int DELAY = 10;
 
    public static void main(String[] args)
@@ -25,7 +25,7 @@ public class Main
                while (true)
                {
                   int toAccount = (int) (bank.size() * Math.random());
-                  double amount = MAX_AMOUNT * Math.random();
+                  int amount = (int) (MAX_AMOUNT * Math.random());
                   bank.transfer(fromAccount, toAccount, amount);
                   Thread.sleep((int) (DELAY * Math.random()));
                }

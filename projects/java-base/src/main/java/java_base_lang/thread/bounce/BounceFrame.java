@@ -1,4 +1,4 @@
-package java_base_lang.thread2.bounce;
+package java_base_lang.thread.bounce;
 
 import javax.swing.*;
 import java.awt.*;

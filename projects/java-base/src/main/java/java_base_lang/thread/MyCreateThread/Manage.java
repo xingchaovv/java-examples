@@ -1,4 +1,4 @@
-package java_base_lang.thread2.MyCreateThread;
+package java_base_lang.thread.MyCreateThread;
 
 public class Manage {
     public static void main(String[] args) {

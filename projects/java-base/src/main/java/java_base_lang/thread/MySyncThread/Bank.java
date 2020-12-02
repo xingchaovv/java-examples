@@ -1,17 +1,12 @@
-package java_base_lang.thread2.MyConditionThread;
+package java_base_lang.thread.MySyncThread;
 
 import java.util.Arrays;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 银行类
  */
 public class Bank
 {
-   private Lock bankLock = new ReentrantLock();
-   private Condition remainTrigger;
    // 多个账户
    private final int[] accounts;
 
@@ -24,7 +19,6 @@ public class Bank
    {
       accounts = new int[n];
       Arrays.fill(accounts, initialBalance); // 填充
-      remainTrigger = bankLock.newCondition();
    }
 
    /**
@@ -33,23 +27,21 @@ public class Bank
     * @param to 目标账户
     * @param amount 金额
     */
-   public void transfer(int from, int to, int amount) throws InterruptedException
+   public synchronized void transfer(int from, int to, int amount) throws InterruptedException
    {
-      bankLock.lock();
-      System.out.printf("%30s：获取锁\n", Thread.currentThread());
+      System.out.printf("%30s：进入同步方法\n", Thread.currentThread());
       try {
          while (accounts[from] < amount) {
-            System.out.printf("%30s：余额不足，线程阻塞\n", Thread.currentThread());
-            remainTrigger.await();
+            System.out.printf("%30s：余额不足，线程等待\n", Thread.currentThread());
+            wait();
          }
          accounts[from] -= amount;
          accounts[to] += amount;
          System.out.printf("%30s：从 %4d 转移 %10d 到 %4d，总余额：%s\n", Thread.currentThread(), from, amount, to, getTotalBalance());
-         System.out.printf("%30s：解除所有余额不足的线程阻塞\n", Thread.currentThread());
-         remainTrigger.signalAll();
+         System.out.printf("%30s：通知所有余额不足的线程\n", Thread.currentThread());
+         notifyAll();
       } finally {
-         System.out.printf("%30s：释放锁\n", Thread.currentThread());
-         bankLock.unlock();
+         System.out.printf("%30s：退出同步方法\n", Thread.currentThread());
       }
    }
 

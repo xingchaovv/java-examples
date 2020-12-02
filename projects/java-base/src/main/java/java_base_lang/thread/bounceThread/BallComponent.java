@@ -1,4 +1,4 @@
-package java_base_lang.thread2.bounceThread;
+package java_base_lang.thread.bounceThread;
 
 import java.awt.*;
 import java.util.*;

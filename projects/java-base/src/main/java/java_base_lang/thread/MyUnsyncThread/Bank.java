@@ -1,4 +1,4 @@
-package java_base_lang.thread2.MyUnsyncThread;
+package java_base_lang.thread.MyUnsyncThread;
 
 import java.util.*;
 
