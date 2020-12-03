@@ -1,6 +1,6 @@
-package java_base_lang.classuage.phone;
+package java_base_lang.classuage.phoneusage.phone;
 
-import java_base_lang.classuage.phone.feature.Chargeable;
+import java_base_lang.classuage.phoneusage.phone.feature.Chargeable;
 
 public class Phone implements Chargeable {
 

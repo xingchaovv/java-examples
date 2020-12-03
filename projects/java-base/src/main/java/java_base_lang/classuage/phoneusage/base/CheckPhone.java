@@ -1,4 +1,4 @@
-package java_base_lang.classuage.base;
+package java_base_lang.classuage.phoneusage.base;
 
 public class CheckPhone {
 

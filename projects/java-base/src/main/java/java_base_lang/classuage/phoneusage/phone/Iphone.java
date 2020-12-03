@@ -1,4 +1,4 @@
-package java_base_lang.classuage.phone;
+package java_base_lang.classuage.phoneusage.phone;
 
 public class Iphone extends Phone {
 
