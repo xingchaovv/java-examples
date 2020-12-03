@@ -111,6 +111,13 @@
       <version>3.0.0</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+    <dependency>
+      <groupId>org.redisson</groupId>
+      <artifactId>redisson</artifactId>
+      <version>3.14.0</version>
+    </dependency>
+
   </dependencies>
 
   <!-- 项目构建配置 -->
