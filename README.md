@@ -4,7 +4,7 @@ Java 入门、进阶的编程实例，仅供参考。
 
 ## Java 基础（java-base）
 
-源码位置：[java-base](java-base)
+源码位置：[/java-base](/java-base)
 
 **网络
 
