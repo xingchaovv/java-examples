@@ -4,19 +4,17 @@ Java 入门、进阶的编程实例，仅供参考。
 
 ## Java 基础（java-base）
 
-**源码入口
+[源码入口](java-base)
 
-[/java-base](/java-base)
+**Java 虚拟机**
 
-**网络
+1. [堆内存溢出例子](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
 
-Socket 客户端例子
+**网络**
 
-[/java-base/src/main/java/chao/example/network/MySocketClient.java](/java-base/src/main/java/chao/example/network/MySocketClient.java)
+1. [Socket 客户端例子](java-base/src/main/java/chao/example/network/MySocketClient.java)
 
-Socket 服务端例子
-
-[/java-base/src/main/java/chao/example/network/MySocketServer.java](/java-base/src/main/java/chao/example/network/MySocketServer.java)
+2. [Socket 服务端例子](java-base/src/main/java/chao/example/network/MySocketServer.java)
 
 InetAddress 类
 
