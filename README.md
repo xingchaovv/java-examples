@@ -2,7 +2,9 @@
 
 个人 Java 学习的例子和练习，欢迎交流。
 
-## 目录
+## Java 基础（java-base）
+
+位置：[java-base]()
 
 - Java 命令和工具
 
@@ -49,8 +51,7 @@
 1. [单元测试示例](src/test/java/com/xingchaovv/java/example/test/TestDemo1.java)
 2. [执行过程演示](src/test/java/com/xingchaovv/java/example/test/TestExecutionProcedure.java)
 
-- Java 学习项目 lets-java
 
-代码位置：projects/lets-java
+## Web 应用 Demo（webapp-demo）
 
-来自：https://github.com/geektime-geekbang/LetsJava
+位置：[webapp-demo]()
