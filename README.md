@@ -2,7 +2,7 @@
 
 Java 入门、进阶的编程实例，仅供参考。
 
-## Java 基础（java-base）
+## Java 基础
 
 [源码入口](java-base)
 
@@ -10,37 +10,31 @@ Java 入门、进阶的编程实例，仅供参考。
 
 1. [堆内存溢出例子](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
 
+2. [栈内存溢出例子](java-base/src/main/java/jvm/memory/StackOverflow1.java)
+
+3. 通过局部变量模拟堆栈溢出，报错StackOverflowError [源码](java-base/src/main/java/jvm/memory/StackOverflowByLocalVariables.java)
+
+4. 通过创建大量线程模拟内存不足，报错OutOfMemoryError [源码](java-base/src/main/java/jvm/memory/OutOfMemoryErrorByThreads.java)
+
 **网络**
 
 1. [Socket 客户端例子](java-base/src/main/java/chao/example/network/MySocketClient.java)
 
 2. [Socket 服务端例子](java-base/src/main/java/chao/example/network/MySocketServer.java)
 
-InetAddress 类
+3. [InetAddress 类](java-base/src/main/java/chao/example/network/InetAddressDemo.java)
 
-[/java-base/src/main/java/chao/example/network/InetAddressDemo.java](/java-base/src/main/java/chao/example/network/InetAddressDemo.java)
+4. [Socket 多客户端支持](java-base/src/main/java/chao/example/network/MultiClientSocket)
 
-Socket 多客户端支持
+5. [TCP 半关闭 Demo](java-base/src/main/java/chao/example/network/HalfCloseDemo.java)
 
-[/java-base/src/main/java/chao/example/network/MultiClientSocket](/java-base/src/main/java/chao/example/network/MultiClientSocket)
+6. [URL、URI 用法](java-base/src/main/java/chao/example/network/UrlDemo.java)
 
-TCP 半关闭 Demo
+7. [URLConnection 类 Demo](java-base/src/main/java/chao/example/network/UrlConnectionDemo.java)
 
-[/java-base/src/main/java/chao/example/network/HalfCloseDemo.java](/java-base/src/main/java/chao/example/network/HalfCloseDemo.java)
+8. [URLConnection 发送 Post 请求](java-base/src/main/java/chao/example/network/PostForm.java)
 
-URL、URI 用法
-
-[/java-base/src/main/java/chao/example/network/UrlDemo.java](/java-base/src/main/java/chao/example/network/UrlDemo.java)
-
-URLConnection 类 Demo
-
-[/java-base/src/main/java/chao/example/network/UrlConnectionDemo.java](/java-base/src/main/java/chao/example/network/UrlConnectionDemo.java)
-
-URLConnection 发送 Post 请求
-
-[/java-base/src/main/java/chao/example/network/PostForm.java](/java-base/src/main/java/chao/example/network/PostForm.java)
-
-**JDBC
+**JDBC**
 
 DB 连接测试
 
@@ -90,11 +84,9 @@ Log4j 2
 
 ## Java 命令和工具
 
-**源码入口
+[源码入口](javac-demo)
 
-[/javac-demo](/javac-demo)
-
-**目录
+**目录**
 
 javac 用法
 
@@ -108,14 +100,10 @@ jar 用法
 
 [/javac-demo/jar.md](/javac-demo/jar.md)
 
-## Maven 项目构建
+## Maven 项目构建例子
 
-**源码入口
-
-[/maven-app](/maven-app)
+[源码入口](maven-app)
 
 ## Web 应用 Demo
 
-**源码入口
-
-[/webapp-demo](/webapp-demo)
+[源码入口](webapp-demo)
