@@ -1,6 +1,8 @@
-# Java 代码示例
+# Java 编程千例（努力中 💪💪💪 ）
 
-Java 入门、进阶的编程实例，仅供参考。
+作者：张星超
+
+顾名思义，本项目的目标是完成一千个以上的 Java 编程实例，涵盖 Java 基础知识、进阶等各方面的内容。
 
 ## Java 基础
 
@@ -8,9 +10,9 @@ Java 入门、进阶的编程实例，仅供参考。
 
 **Java 虚拟机**
 
-1. [堆内存溢出例子](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
+1. 堆内存溢出例子 [源码](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
 
-2. [栈内存溢出例子](java-base/src/main/java/jvm/memory/StackOverflow1.java)
+2. 栈内存溢出例子 [源码](java-base/src/main/java/jvm/memory/StackOverflow1.java)
 
 3. 通过局部变量模拟堆栈溢出，报错StackOverflowError [源码](java-base/src/main/java/jvm/memory/StackOverflowByLocalVariables.java)
 
@@ -18,7 +20,7 @@ Java 入门、进阶的编程实例，仅供参考。
 
 **网络**
 
-1. [Socket 客户端例子](java-base/src/main/java/chao/example/network/MySocketClient.java)
+1. Socket 客户端例子 [源码](java-base/src/main/java/chao/example/network/MySocketClient.java)
 
 2. [Socket 服务端例子](java-base/src/main/java/chao/example/network/MySocketServer.java)
 
