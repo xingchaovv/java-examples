@@ -4,19 +4,27 @@
 
 顾名思义，本项目的目标是完成一千个以上的 Java 编程实例，涵盖 Java 基础知识、进阶等各方面的内容。
 
+# 目录
+
+<CatalogStartTag/>
+
 ## Java 基础
 
-[源码入口](java-base)
+1. [通过局部变量模拟堆栈溢出，报错StackOverflowError](java-base/src/main/java/jvm/memory/StackOverflowByLocalVariables.java)
 
-**Java 虚拟机**
+2. [堆内存溢出例子](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
 
-1. 堆内存溢出例子 [源码](java-base/src/main/java/jvm/memory/HeapOverflow1.java)
+3. [栈内存溢出例子](java-base/src/main/java/jvm/memory/StackOverflow1.java)
 
-2. 栈内存溢出例子 [源码](java-base/src/main/java/jvm/memory/StackOverflow1.java)
+4. [通过创建大量线程模拟内存不足，报错OutOfMemoryError](java-base/src/main/java/jvm/memory/OutOfMemoryErrorByThreads.java)
 
-3. 通过局部变量模拟堆栈溢出，报错StackOverflowError [源码](java-base/src/main/java/jvm/memory/StackOverflowByLocalVariables.java)
+## Java 编译和工具
 
-4. 通过创建大量线程模拟内存不足，报错OutOfMemoryError [源码](java-base/src/main/java/jvm/memory/OutOfMemoryErrorByThreads.java)
+
+
+<CatalogEndTag/>
+
+
 
 **网络**
 

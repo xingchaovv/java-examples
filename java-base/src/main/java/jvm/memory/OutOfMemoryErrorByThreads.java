@@ -1,7 +1,7 @@
 package jvm.memory;
 
 /**
- * 通过创建大量线程模拟内存不足，报错OutOfMemoryError
+ * @example 通过创建大量线程模拟内存不足，报错OutOfMemoryError
  */
 public class OutOfMemoryErrorByThreads {
 

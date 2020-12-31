@@ -1,7 +1,7 @@
 package jvm.memory;
 
 /**
- * 通过局部变量模拟堆栈溢出，报错StackOverflowError
+ * @example 通过局部变量模拟堆栈溢出，报错StackOverflowError
  */
 public class StackOverflowByLocalVariables {
 

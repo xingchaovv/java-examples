@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @example 栈内存溢出例子
+ *
  * VM Options: -Xss144K
  */
 public class StackOverflow1 {
