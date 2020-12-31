@@ -6,7 +6,7 @@ import java.net.*;
 import java.util.Scanner;
 
 /**
- * POST 表单提交
+ * @example URLConnection 发送 Post 请求
  */
 public class PostForm {
 

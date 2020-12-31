@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * @example Socket 多客户端支持
+ */
 public class Manage {
 
     public static void main(String[] args) throws IOException {

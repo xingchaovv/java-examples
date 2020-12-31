@@ -5,6 +5,9 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * @example Socket 客户端例子
+ */
 public class MySocketClient {
 
     public static void main(String[] args) throws IOException {

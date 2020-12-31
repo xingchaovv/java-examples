@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * @example URLConnection 类 Demo
+ */
 public class UrlConnectionDemo {
 
     public static void main(String[] args) throws IOException {

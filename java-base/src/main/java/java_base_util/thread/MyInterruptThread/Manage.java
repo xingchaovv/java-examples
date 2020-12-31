@@ -1,5 +1,8 @@
 package java_base_util.thread.MyInterruptThread;
 
+/**
+ * @example 线程中断
+ */
 public class Manage {
     public static void main(String[] args) throws InterruptedException {
         Thread sleepThread = new Thread(new SleepJob());

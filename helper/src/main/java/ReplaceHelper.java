@@ -18,7 +18,7 @@ public class ReplaceHelper {
 
     public void replace() throws IOException {
         String oldDocument = Files.readString(targetFile.toPath());
-        String newCatalogBlock = startTag + "\n\n" + newCatalog + "\n\n" + endTag;
+        String newCatalogBlock = startTag + "\n\n" + newCatalog + endTag;
         String regularStr = forLiteralVal(startTag) + "[\\s\\S]*?" + forLiteralVal(endTag);
 
         Matcher matcher = Pattern.compile(regularStr).matcher(oldDocument);

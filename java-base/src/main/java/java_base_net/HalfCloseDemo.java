@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * 半关闭 Demo
+ * @example TCP 半关闭 Demo
  */
 public class HalfCloseDemo {
 

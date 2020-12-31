@@ -5,6 +5,9 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
+/**
+ * @example URL、URI 用法
+ */
 public class UrlDemo {
 
     public static void main(String[] args) throws MalformedURLException, URISyntaxException {

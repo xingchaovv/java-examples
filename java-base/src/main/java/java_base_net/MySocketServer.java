@@ -8,6 +8,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+/**
+ * @example Socket 服务端例子
+ */
 public class MySocketServer {
 
     public static void main(String[] args) throws IOException {

@@ -9,6 +9,9 @@ import java.nio.file.Path;
 import java.sql.*;
 import java.util.Properties;
 
+/**
+ * @example JDBC 连接
+ */
 public class ConnectionUsage {
 
     public static void main(String[] args) throws IOException, SQLException, URISyntaxException {

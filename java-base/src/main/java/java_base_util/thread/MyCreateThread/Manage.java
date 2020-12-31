@@ -1,5 +1,8 @@
 package java_base_util.thread.MyCreateThread;
 
+/**
+ * @example 线程创建
+ */
 public class Manage {
     public static void main(String[] args) {
         Thread t1 = new Thread(new Job());
