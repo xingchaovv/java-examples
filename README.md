@@ -42,6 +42,18 @@
 
 16. [URL、URI 用法](java-base/src/main/java/java_base_net/UrlDemo.java)
 
+17. [动态代理实现：User 类例子](java-base/src/main/java/java_base_lang/dynamic/proxy/user_proxy/Main.java)
+
+18. [反射用法1](java-base/src/main/java/java_base_lang/reflection/Usage1.java)
+
+19. [反射：获取私有变量的值](java-base/src/main/java/java_base_lang/reflection/private_value/Main.java)
+
+20. [反射：操作数组](java-base/src/main/java/java_base_lang/reflection/ArrayUsage.java)
+
+21. [反射用法：构造方法、方法、属性](java-base/src/main/java/java_base_lang/reflection/Usage2.java)
+
+22. [反射：方法调用 Invoke](java-base/src/main/java/java_base_lang/reflection/InvokeUsage.java)
+
 ## Java 编译和工具
 
 <CatalogEndTag/>
