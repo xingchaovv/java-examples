@@ -24,37 +24,41 @@
 
 7. [通过创建大量线程模拟内存不足，报错OutOfMemoryError](java-base/src/main/java/jvm/memory/OutOfMemoryErrorByThreads.java)
 
-8. [自定义类加载器](java-base/src/main/java/jvm/class_loader/my_class_loader/Launcher.java)
+8. [System Properties 用法](java-base/src/main/java/jvm/system_properties/Usage1.java)
 
-9. [URLConnection 发送 Post 请求](java-base/src/main/java/java_base_net/PostForm.java)
+9. [自定义类加载器](java-base/src/main/java/jvm/class_loader/my_class_loader/Launcher.java)
 
-10. [URLConnection 类 Demo](java-base/src/main/java/java_base_net/UrlConnectionDemo.java)
+10. [URLConnection 发送 Post 请求](java-base/src/main/java/java_base_net/PostForm.java)
 
-11. [TCP 半关闭 Demo](java-base/src/main/java/java_base_net/HalfCloseDemo.java)
+11. [URLConnection 类 Demo](java-base/src/main/java/java_base_net/UrlConnectionDemo.java)
 
-12. [InetAddress 类](java-base/src/main/java/java_base_net/InetAddressDemo.java)
+12. [TCP 半关闭 Demo](java-base/src/main/java/java_base_net/HalfCloseDemo.java)
 
-13. [Socket 客户端例子](java-base/src/main/java/java_base_net/MySocketClient.java)
+13. [InetAddress 类](java-base/src/main/java/java_base_net/InetAddressDemo.java)
 
-14. [Socket 多客户端支持](java-base/src/main/java/java_base_net/MultiClientSocket/Manage.java)
+14. [Socket 客户端例子](java-base/src/main/java/java_base_net/MySocketClient.java)
 
-15. [Socket 服务端例子](java-base/src/main/java/java_base_net/MySocketServer.java)
+15. [Socket 多客户端支持](java-base/src/main/java/java_base_net/MultiClientSocket/Manage.java)
 
-16. [URL、URI 用法](java-base/src/main/java/java_base_net/UrlDemo.java)
+16. [Socket 服务端例子](java-base/src/main/java/java_base_net/MySocketServer.java)
 
-17. [动态代理实现：User 类例子](java-base/src/main/java/java_base_lang/dynamic/proxy/user_proxy/Main.java)
+17. [URL、URI 用法](java-base/src/main/java/java_base_net/UrlDemo.java)
 
-18. [大数值类 BigInteger 和 BigDecimal](java-base/src/main/java/java_base_lang/number/BigIntegerAndBigDecimal.java)
+18. [动态代理实现：User 类例子](java-base/src/main/java/java_base_lang/dynamic/proxy/user_proxy/Main.java)
 
-19. [反射用法1](java-base/src/main/java/java_base_lang/reflection/Usage1.java)
+19. [大数值类 BigInteger 和 BigDecimal](java-base/src/main/java/java_base_lang/number/BigIntegerAndBigDecimal.java)
 
-20. [反射：获取私有变量的值](java-base/src/main/java/java_base_lang/reflection/private_value/Main.java)
+20. [外围类获取用法、关系观察](java-base/src/main/java/java_base_lang/class_feature/EnclosingClassTest.java)
 
-21. [反射：操作数组](java-base/src/main/java/java_base_lang/reflection/ArrayUsage.java)
+21. [反射用法1](java-base/src/main/java/java_base_lang/reflection/Usage1.java)
 
-22. [反射用法：构造方法、方法、属性](java-base/src/main/java/java_base_lang/reflection/Usage2.java)
+22. [反射：获取私有变量的值](java-base/src/main/java/java_base_lang/reflection/private_value/Main.java)
 
-23. [反射：方法调用 Invoke](java-base/src/main/java/java_base_lang/reflection/InvokeUsage.java)
+23. [反射：操作数组](java-base/src/main/java/java_base_lang/reflection/ArrayUsage.java)
+
+24. [反射用法：构造方法、方法、属性](java-base/src/main/java/java_base_lang/reflection/Usage2.java)
+
+25. [反射：方法调用 Invoke](java-base/src/main/java/java_base_lang/reflection/InvokeUsage.java)
 
 ## Java 编译和工具
 
