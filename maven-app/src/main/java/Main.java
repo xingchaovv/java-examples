@@ -13,5 +13,6 @@ public class Main {
         RedissonClient client = RedisClient.obtainClient();
         RAtomicLong viewCount = client.getAtomicLong("viewCount");
         log.info("viewCount: {}", viewCount.addAndGet(100));
+        client.shutdown();
     }
 }

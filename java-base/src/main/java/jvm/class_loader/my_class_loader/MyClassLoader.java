@@ -11,7 +11,7 @@ public class MyClassLoader extends ClassLoader {
 
     public MyClassLoader() {
         super();
-        classDir = Path.of("/tmp/MyClassLoader");
+        classDir = Path.of("/Users/chao/Documents/ChaoProjects/Java Projects/java-example/java-base/src/main/resources/jvm/class_loader/my_class_loader");
     }
 
     @Override
