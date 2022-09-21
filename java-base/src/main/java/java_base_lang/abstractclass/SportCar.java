@@ -9,6 +9,11 @@ public class SportCar extends Car {
         System.out.println("SportCar is Running.");
     }
 
+    public String getName() {
+        System.out.println("in SportCar.");
+        return "";
+    }
+
     public static void staticRun() {
         System.out.println("SportCar staticRun.");
     }

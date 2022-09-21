@@ -3,7 +3,8 @@ package java_base_lang.abstractclass;
 public abstract class Car {
     private String name;
 
-    public String getName() {
+    public Object getName() {
+        System.out.println("in Car.");
         return name;
     }
 

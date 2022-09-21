@@ -14,13 +14,15 @@ public class Main {
         User chao = new User("chao");
         System.out.printf("clazz: %s\n", clazz);
 
+        usernameField.setAccessible(true);
+
         try {
             System.out.printf("username1: %s\n", usernameField.get(chao));
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
 
-        usernameField.setAccessible(true);
+
         System.out.printf("username2: %s\n", usernameField.get(chao));
 
         usernameField.set(chao, "new chao");

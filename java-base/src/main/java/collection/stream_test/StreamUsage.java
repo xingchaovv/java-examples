@@ -116,7 +116,7 @@ public class StreamUsage {
     }
 
     private void test_findFirst() {
-        Set<String> names = new HashSet<>(){{
+        Set<String> names = new HashSet<String>(){{
             add("chao"); add("zhang"); add("aaa");
         }};
         // If the stream has no encounter order, then any element may be returned.

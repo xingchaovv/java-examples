@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="printOnlyInfo" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <ThresholdFilter level="warn" onMatch="DENY" onMismatch="ACCEPT"/>
+        </Console>
+        <Console name="printWarn" target="SYSTEM_ERR">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="printOnlyInfo" level="info" />
+            <AppenderRef ref="printWarn" level="warn" />
+        </Root>
+    </Loggers>
+</Configuration>

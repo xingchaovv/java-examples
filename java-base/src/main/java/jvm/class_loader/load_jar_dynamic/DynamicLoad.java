@@ -15,16 +15,16 @@ public class DynamicLoad {
     }
 
     private void run() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, MalformedURLException, NoSuchFieldException, ClassNotFoundException {
-        URL jarURL = Path.of("/Users/daniel/.m2/repository/org/redisson/redisson/3.14.0/redisson-3.14.0.jar").toUri().toURL();
-        URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{jarURL}, ClassLoader.getSystemClassLoader());
-
-        Field sclField = ClassLoader.class.getDeclaredField("scl");
-        sclField.setAccessible(true);
-        sclField.set(null, urlClassLoader);
-
-        Thread.currentThread().setContextClassLoader(urlClassLoader);
-
-        RedisDemo.demo();
+//        URL jarURL = Path.of("/Users/daniel/.m2/repository/org/redisson/redisson/3.14.0/redisson-3.14.0.jar").toUri().toURL();
+//        URLClassLoader urlClassLoader = new URLClassLoader(new URL[]{jarURL}, ClassLoader.getSystemClassLoader());
+//
+//        Field sclField = ClassLoader.class.getDeclaredField("scl");
+//        sclField.setAccessible(true);
+//        sclField.set(null, urlClassLoader);
+//
+//        Thread.currentThread().setContextClassLoader(urlClassLoader);
+//
+//        RedisDemo.demo();
 
 //        Class<?> demoClazz = urlClassLoader.loadClass("jvm.class_loader.load_jar_dynamic.RedisDemo");
 //        Method demoMethod = demoClazz.getDeclaredMethod("demo");

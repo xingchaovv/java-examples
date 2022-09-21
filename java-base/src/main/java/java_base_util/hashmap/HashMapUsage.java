@@ -1,11 +1,12 @@
 package java_base_util.hashmap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapUsage {
 
     public static void main(String[] args) {
-        HashMap<String, Integer> items = new HashMap<>();
+        Map<String, Integer> items = new HashMap<>();
         items.put("Aa", 101);
         System.out.println("Aa".hashCode());
         System.out.println("BB".hashCode());
