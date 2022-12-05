@@ -1,3 +1,3 @@
-# Java Example
+# Java Examples
 
 Author: Xingchao Zhang
