@@ -1,4 +1,4 @@
-package jvm.system_properties;
+package system_properties;
 
 import java.util.Properties;
 
