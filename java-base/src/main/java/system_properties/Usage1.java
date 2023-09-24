@@ -3,7 +3,7 @@ package system_properties;
 import java.util.Properties;
 
 /**
- * @example System Properties 用法
+ * 系统属性 System Properties 用法
  */
 public class Usage1 {
 
