@@ -1,4 +1,4 @@
-package java_base_lang.string;
+package string;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package java_base_lang.string;
+package string;
 
 public class StringReplace {
 
