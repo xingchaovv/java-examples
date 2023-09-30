@@ -1,9 +1,12 @@
-package java_base_lang.lambda;
+package lambda;
 
-public class RunnableUsage {
+/**
+ * Lambda 方式操作 Runnable
+ */
+public class RunnableByLambdaExample {
 
     public static void main(String[] args) {
-        // 匿名类实现
+        // 通过匿名类构建 Runnable 实例
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
