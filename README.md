@@ -9,6 +9,27 @@ Joda-Time Java 时间类库实例、用法
 StringSubstitutor 字符串替换器（变量）、字符替换工具  
 （Apache Commons Text 类库工具）
 
+## Example1103
+
+Java Logging APIs  
+java.util.logging.Logger 日志用法  
+（JUL 日志用法）
+
+## Example6002
+
+Apache Log4j2 用法
+（log4j-api、log4j-core）
+
+## Example6003
+
+Logback 日志用法
+（slf4j-api、logback-classic、logback-core）
+
+## Example6004
+
+Apache Log4j2 用法 + slf4j-api
+（slf4j-api、logback-classic、logback-core）
+
 ## Example6001
 
 Active MQ 用法实例
