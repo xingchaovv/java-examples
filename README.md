@@ -27,9 +27,14 @@ Logback 日志用法
 
 ## Example6004
 
-Apache Log4j2 用法 + slf4j-api
-（slf4j-api、logback-classic、logback-core）
+Apache Log4j2 用法，结合slf4j-api
+（slf4j-api、log4j-slf4j-impl、log4j-api、log4j-core）
 
 ## Example6001
 
 Active MQ 用法实例
+
+## Example1105
+
+Java shutdownHook 用法
+（Java 退出处理）
