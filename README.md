@@ -15,6 +15,10 @@ Java Logging APIs
 java.util.logging.Logger 日志用法  
 （JUL 日志用法）
 
+## Example1105
+
+Apache HttpComponents Client 用法、实例
+
 ## Example6002
 
 Apache Log4j2 用法
@@ -38,3 +42,11 @@ Active MQ 用法实例
 
 Java shutdownHook 用法
 （Java 退出处理）
+
+## Example6005
+
+Java Web App 例子、JSP 例子。
+
+## Example6006
+
+JUnit 应用例子。
