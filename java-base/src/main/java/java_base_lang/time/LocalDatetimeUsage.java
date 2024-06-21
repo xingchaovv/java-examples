@@ -5,6 +5,10 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.ZoneId;
+import java.time.chrono.IsoChronology;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.format.ResolverStyle;
 import java.util.Date;
 
 public class LocalDatetimeUsage {
@@ -25,9 +29,12 @@ public class LocalDatetimeUsage {
                 LocalDateTime.parse("2021-04-05T06:07:08")
         );
 
-        // 操作时间
-        System.out.printf("%30s: %s\n", "Two days later",
-                LocalDateTime.now().plusDays(2)
+        System.out.printf("ISO_LOCAL_DATE_TIME: %s\n",
+                LocalDateTime.now().format(new DateTimeFormatterBuilder().append(DateTimeFormatter.ISO_LOCAL_DATE)
+                        .appendLiteral(' ')
+                        .append(DateTimeFormatter.ISO_LOCAL_TIME)
+                        .toFormatter()
+                )
         );
     }
 }
