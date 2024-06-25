@@ -1,4 +1,4 @@
-package chao.chaoutil;
+package chao.chaoframe.util;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

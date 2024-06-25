@@ -158,7 +158,7 @@
 
         <dependency>
             <groupId>chao</groupId>
-            <artifactId>chaoutil</artifactId>
+            <artifactId>chaoframe</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
