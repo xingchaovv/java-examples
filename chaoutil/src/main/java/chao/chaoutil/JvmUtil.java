@@ -1,4 +1,4 @@
-package com.xingchaovv.chaoutil;
+package chao.chaoutil;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

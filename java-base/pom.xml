@@ -157,7 +157,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.xingchaovv</groupId>
+            <groupId>chao</groupId>
             <artifactId>chaoutil</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
