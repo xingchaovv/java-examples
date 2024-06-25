@@ -1,6 +1,9 @@
 package chao.chaoframe.util;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -8,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Date;
+import java.util.Map;
 
 public class JvmUtil {
 
@@ -46,31 +50,37 @@ public class JvmUtil {
     }
 
     public static JarInfo getJarInfo(Class<?> classInJar) {
-        URL classUrl = classInJar.getProtectionDomain().getCodeSource().getLocation();
-        Path classPath;
         try {
-            classPath = Paths.get(classUrl.toURI());
-        } catch (URISyntaxException e) {
+            // Test URL
+            // classUrl = new URL("jar:file:/E:/xxx/xxx-1.0-SNAPSHOT.jar!/BOOT-INF/classes!/");
+
+            URL classUrl = classInJar.getProtectionDomain().getCodeSource().getLocation();
+            String spec = classUrl.getFile();
+            int separatorIndex = spec.indexOf("!/");
+            if (separatorIndex == -1) {
+                return null;
+            }
+            String fileUriString = spec.substring(0, separatorIndex);
+            if (!fileUriString.startsWith("file:")) {
+                return null;
+            }
+            URI fileUri = URI.create(fileUriString);
+
+            BasicFileAttributes attrs;
+            try {
+                attrs = Files.readAttributes(Paths.get(fileUri), BasicFileAttributes.class);
+            } catch (IOException ex) {
+                return null;
+            }
+
+            return new JarInfo(
+                    attrs.size(),
+                    new Date(attrs.creationTime().toMillis()),
+                    new Date(attrs.lastModifiedTime().toMillis())
+            );
+        } catch (RuntimeException e) {
             return null;
         }
-
-        if (!classPath.toString().endsWith(".jar")) {
-            return null;
-        }
-        Path jarPath = classPath;
-
-        BasicFileAttributes attrs;
-        try {
-            attrs = Files.readAttributes(jarPath, BasicFileAttributes.class);
-        } catch (IOException ex) {
-            return null;
-        }
-
-        return new JarInfo(
-                attrs.size(),
-                new Date(attrs.creationTime().toMillis()),
-                new Date(attrs.lastModifiedTime().toMillis())
-        );
     }
 
 }
